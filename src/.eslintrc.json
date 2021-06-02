@@ -8,6 +8,10 @@
       "jsx": true
     }
   },
+  "plugins": [
+    // ...
+    "react-hooks"
+  ],
   "ignorePatterns": ["node_modules/**/*"],
   "settings": {
     "react": {
@@ -29,6 +33,7 @@
     "@typescript-eslint/ban-ts-ignore": "off",
     "@typescript-eslint/explicit-module-boundary-types": "off",
     "quotes": [1, "single"],
-    "react/jsx-pascal-case":[1,{"allowAllCaps":true,"allowNamespace":true}]
+    "react/jsx-pascal-case":[1,{"allowAllCaps":true,"allowNamespace":true}],
+    "react-hooks/rules-of-hooks": "off"
   }
 }
