@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2021-06-02 09:39:20
- * @LastEditTime: 2021-06-02 09:39:21
+ * @LastEditTime: 2021-06-02 16:13:00
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /aex-perpetual-contract-frontend/src/theme/rebass.d.ts
@@ -12,7 +12,7 @@ import {
   ButtonProps as ButtonP,
   FlexProps as FlexP,
   LinkProps as LinkP,
-  TextProps as TextP,
+  TextProps as TextP
 } from 'rebass'
 
 declare module 'rebass' {

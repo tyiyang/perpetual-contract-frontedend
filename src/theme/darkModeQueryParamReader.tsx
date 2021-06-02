@@ -13,9 +13,7 @@ import { RouteComponentProps } from 'react-router-dom'
 import { parse } from 'qs'
 import { AppDispatch } from '../state'
 import { updateUserDarkMode } from '../state/user/actions'
-export default function DarkModeQueryParamReader({
-  location: { search },
-}: RouteComponentProps): null {
+export default function DarkModeQueryParamReader({ location: { search } }: RouteComponentProps): null {
   const dispatch = useDispatch<AppDispatch>()
   useEffect(() => {
     if (search) return
@@ -23,7 +21,7 @@ export default function DarkModeQueryParamReader({
 
     const parsed = parse(search, {
       parseArrays: false,
-      ignoreQueryPrefix: true,
+      ignoreQueryPrefix: true
     })
 
     const theme = parsed.theme

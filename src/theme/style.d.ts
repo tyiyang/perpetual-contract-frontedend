@@ -6,10 +6,7 @@
  * @Description: In User Settings Edit
  * @FilePath: /aex-perpetual-contract-frontend/src/theme/style.d.ts
  */
-import {
-  FlattenSimpleInterpolation,
-  ThemedCssFunction,
-} from 'styled-components'
+import { FlattenSimpleInterpolation, ThemedCssFunction } from 'styled-components'
 export type Color = string
 export interface Colors {
   // base
