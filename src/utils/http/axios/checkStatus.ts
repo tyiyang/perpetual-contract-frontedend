@@ -1,13 +1,13 @@
 /*
  * @Author: your name
  * @Date: 2021-01-21 11:37:18
- * @LastEditTime: 2021-06-02 17:00:40
+ * @LastEditTime: 2021-06-03 10:08:24
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /fronted_v2/src/utils/http/axios/checkStatus.ts
  */
 import { useTranslation } from 'react-i18next'
-export function checkStatus(status: number, msg: string): void {
+export function CheckStatus(status: number, msg: string): void {
   const { t } = useTranslation()
   switch (status) {
     case 400:

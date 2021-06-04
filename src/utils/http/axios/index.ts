@@ -4,7 +4,7 @@ import type { CreateAxiosOptions, RequestOptions, Result } from './types'
 import { VAxios } from './Axios'
 import { AxiosTransform } from './axiosTransform'
 
-import { checkStatus } from './checkStatus'
+import { CheckStatus } from './checkStatus'
 
 import { RequestEnum, ResultEnum, ContentTypeEnum } from './types'
 
@@ -115,6 +115,7 @@ const transform: AxiosTransform = {
    * @description: 响应错误处理
    */
   responseInterceptorsCatch: (error: any) => {
+    // eslint-disable-next-line react-hooks/rules-of-hooks
     const { t } = useTranslation()
     // errorStore.setupErrorHandle(error);
     const { response, code, message } = error || {}
@@ -130,7 +131,7 @@ const transform: AxiosTransform = {
     } catch (error) {
       throw new Error(error)
     }
-    checkStatus(error?.response?.status, msg)
+    CheckStatus(error?.response?.status, msg)
     return Promise.reject(error)
   }
 }

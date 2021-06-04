@@ -164,6 +164,8 @@ export class VAxios {
             ret !== errorResult ? resolve(ret) : reject(new Error('request error!'))
             return
           }
+          // @todo eslint
+          // eslint-disable-next-line prettier/prettier
           resolve((res as unknown) as Promise<T>)
         })
         .catch((e: Error) => {

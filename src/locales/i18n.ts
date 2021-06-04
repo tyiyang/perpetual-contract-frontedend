@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2021-05-31 16:10:14
- * @LastEditTime: 2021-06-02 16:01:14
+ * @LastEditTime: 2021-06-02 17:18:44
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /aex-perpetual-contract-frontend/src/locales/i18n.ts
