@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2021-06-09 11:36:30
- * @LastEditTime: 2021-06-09 11:36:50
+ * @LastEditTime: 2021-06-09 14:23:47
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /aex-perpetual-contract-frontend/src/components/Tooltips/index.tsx
@@ -57,7 +57,6 @@ export function MouseoverTooltipContent({ content, children, ...rest }: Omit<Too
         onMouseEnter={open}
         onMouseLeave={close}
       >
-        1212
         {children}
       </div>
     </TooltipContent>
