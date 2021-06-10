@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2021-05-31 11:47:52
- * @LastEditTime: 2021-06-02 16:00:05
+ * @LastEditTime: 2021-06-10 11:18:48
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /aex-perpetual-contract-frontend/src/index.tsx
@@ -12,6 +12,7 @@ import { Provider } from 'react-redux'
 import store from './state'
 import './locales/i18n'
 import App from './App'
+import Popup from './components/Popups'
 import ThemeProvider, { FixedGlobalStyle, ThemedGlobalStyle } from './theme'
 import reportWebVitals from './reportWebVitals'
 ReactDOM.render(
@@ -19,6 +20,7 @@ ReactDOM.render(
     <FixedGlobalStyle />
     <Provider store={store}>
       <ThemeProvider>
+        <Popup />
         <ThemedGlobalStyle />
         <App />
       </ThemeProvider>

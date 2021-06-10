@@ -1,12 +1,12 @@
 /*
  * @Author: your name
  * @Date: 2021-06-09 15:33:39
- * @LastEditTime: 2021-06-09 15:51:01
+ * @LastEditTime: 2021-06-09 15:52:49
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /aex-perpetual-contract-frontend/src/components/TestModal/index.tsx
  */
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 import { ApplicationModal } from 'state/application/actions'
 import styled from 'styled-components/macro'
 import { useModelOpen, useTestModalToggle } from 'state/application/hooks'
