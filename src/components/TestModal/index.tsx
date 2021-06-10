@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2021-06-09 15:33:39
- * @LastEditTime: 2021-06-09 15:52:49
+ * @LastEditTime: 2021-06-10 14:36:29
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /aex-perpetual-contract-frontend/src/components/TestModal/index.tsx
@@ -33,10 +33,6 @@ const Wrapper = styled.div`
 export default function TestModal() {
   const testModalOpen = useModelOpen(ApplicationModal.TEST)
   const toggleTestModal = useTestModalToggle()
-
-  // useEffect(() => {
-  //   toggleTestModal()
-  // }, [toggleTestModal, testModalOpen])
 
   return (
     <Modal isOpen={testModalOpen} onDismiss={toggleTestModal} minHeight={false}>

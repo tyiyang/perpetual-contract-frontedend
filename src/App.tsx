@@ -1,12 +1,12 @@
 /*
  * @Author: your name
  * @Date: 2021-05-31 11:47:52
- * @LastEditTime: 2021-06-10 11:32:58
+ * @LastEditTime: 2021-06-10 14:18:17
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Editœ
  * @FilePath: /aex-perpetual-contract-frontend/src/App.tsx
  */
-import React, { useEffect } from 'react'
+import React, { useCallback } from 'react'
 import { useTranslation } from 'react-i18next'
 import { TYPE } from './theme'
 import { MouseoverTooltip, MouseoverTooltipContent } from 'components/Tooltips'
@@ -24,7 +24,8 @@ function App() {
   const { t } = useTranslation()
   const addPopup = useAddPopup()
   const toggleWalletModal = useTestModalToggle()
-  useEffect(() => {
+
+  const addPopusHandler = useCallback(() => {
     addPopup(
       {
         txn: {
@@ -35,18 +36,6 @@ function App() {
       },
       'hash1'
     )
-    setTimeout(() => {
-      addPopup(
-        {
-          txn: {
-            title: 'xxx',
-            success: true,
-            summary: '我是notification'
-          }
-        },
-        'hash2'
-      )
-    }, 5000)
   }, [addPopup])
   return (
     <>
@@ -60,6 +49,7 @@ function App() {
         <MouseoverTooltipContent content={<AdvancedDetails />}>带结构tooltips?</MouseoverTooltipContent>
       </div>
       <div onClick={toggleWalletModal}>弹层</div>
+      <div onClick={addPopusHandler}>Popup</div>
       <TestModal />
     </>
   )

@@ -1,0 +1,44 @@
+import { Meta } from '@storybook/addon-docs/blocks';
+
+<Meta title="Intro" />
+
+# Get started
+
+Aex Design System is a reusable component library that helps Aex contributors build UIs faster. The goal is to make building durable UIs more productive and satisfying.
+
+
+### **Use**
+
+Import components you want into your UI
+
+`import { MouseoverTooltip, MouseoverTooltipContent } from './components/Tooltips'`
+
+and use them like so
+
+```
+  const example = () => (
+    <div>
+      <MouseoverTooltip text="纯文字">辅导费</MouseoverTooltip>
+    </div>
+  )
+```
+
+### **Browse SDS components in your own Aex**
+
+Once you add the package, update your .storybook/config.js to import all files ending in .stories.js.
+
+```
+  import { configure } from '@storybook/react';
+  configure(require.context('../src', true, /.stories.js$/), module);
+```
+
+### **Run and develop SDS locally**
+
+Clone the [SDS GitHub project](https://github.com/AexDeFi/rainbow-fronted.git) then start Storybook.
+
+`yarn && yarn run storybook`
+
+### **Resources**
+
+- [Introducing Aex Design System](https://github.com/AexDeFi/rainbow-fronted.git)
+- [GitHub repository](https://github.com/AexDeFi/rainbow-fronted.git)
