@@ -166,7 +166,7 @@ export class VAxios {
           }
           // @todo eslint
           // eslint-disable-next-line prettier/prettier
-          resolve((res as unknown) as Promise<T>)
+          resolve(res as unknown as Promise<T>)
         })
         .catch((e: Error) => {
           if (requestCatch && isFunction(requestCatch)) {

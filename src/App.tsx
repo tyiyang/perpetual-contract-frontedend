@@ -1,17 +1,18 @@
 /*
  * @Author: your name
  * @Date: 2021-05-31 11:47:52
- * @LastEditTime: 2021-06-10 14:18:17
+ * @LastEditTime: 2021-06-15 15:35:14
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Editœ
  * @FilePath: /aex-perpetual-contract-frontend/src/App.tsx
  */
-import React, { useCallback } from 'react'
+import React, { useCallback, useEffect } from 'react'
 import { useTranslation } from 'react-i18next'
 import { TYPE } from './theme'
 import { MouseoverTooltip, MouseoverTooltipContent } from 'components/Tooltips'
 import { useAddPopup, useTestModalToggle } from 'state/application/hooks'
 import TestModal from 'components/TestModal'
+// import { getMarketQuotes } from './api/test'
 function AdvancedDetails() {
   return (
     <>
@@ -37,6 +38,10 @@ function App() {
       'hash1'
     )
   }, [addPopup])
+  useEffect(() => {
+    // getMarketQuotes()
+    console.log(1212)
+  }, [])
   return (
     <>
       <TYPE.main>多语言准备：</TYPE.main>
